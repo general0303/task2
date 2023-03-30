@@ -109,7 +109,7 @@ class TestToss:
 
 class TestRecipient:
     def test_correct(self):
-        r = requests.get("http://localhost:8080/group/1/participant/1/recipient")
+        r = requests.get("http://localhost:8080/group/1/participant/2/recipient")
         assert r.status_code == 200
         r = r.json()
         assert 'id' in r
