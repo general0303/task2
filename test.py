@@ -114,7 +114,7 @@ class TestRecipient:
         r = r.json()
         assert 'id' in r
         assert 'name' in r
-        assert 'with' in r
+        assert 'wish' in r
 
     def test_incorrect_group(self):
         r = requests.get("http://localhost:8080/group/1000000/participant/2/recipient")
